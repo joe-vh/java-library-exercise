@@ -42,7 +42,7 @@ class BookServiceImplTest {
 
     @Test
     void testRetrieveBookCorrectReference() throws BookNotFoundException {
-        assertTrue(bookService.retrieveBook("BOOK-GRUFF472").getTitle() == "The Gruffalo");
+        assertEquals("The Gruffalo", bookService.retrieveBook("BOOK-GRUFF472").getTitle());
     }
 
     @Test
